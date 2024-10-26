@@ -1,0 +1,27 @@
+﻿<Window x:Class="praktika2.Page.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:praktika2.Page"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="0,0,0,37">
+            <TextBlock Text="Name"></TextBlock>
+            <TextBox Text="{Binding Name }"/>
+            <TextBlock Text="Description"></TextBlock>
+            <TextBox Text="{Binding Description }"/>
+            <TextBlock Text="Date_of_premier"></TextBlock>
+            <DatePicker SelectedDate="{Binding Date_of_premier }"/>
+            <TextBlock Text="Janr"></TextBlock>
+            <TextBox Text="{Binding Janr }"/>
+            <TextBlock Text="dostup_pushkin"></TextBlock>
+            <TextBox Text="{Binding dostup_pushkin}"/>
+
+            <ComboBox x:Name="SCinema"
+                      SelectedItem="{Binding Cinema}" Height="56" SelectionChanged="SCinema_SelectionChanged"></ComboBox>
+            
+        </StackPanel>
+    </Grid>
+</Window>
