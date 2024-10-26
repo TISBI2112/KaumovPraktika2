@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace praktika2
 {
-    public class Cinema
+    public class Cinemas
     {
-        public string Name { get; set; }
+        public string Cinema { get; set; }
 
     }
 }

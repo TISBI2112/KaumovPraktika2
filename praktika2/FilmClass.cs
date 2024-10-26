@@ -12,7 +12,7 @@ namespace praktika2
         public string Description { get; set; }
         public DateTime Date_of_premier { get; set; }
         public string Janr { get; set; }
-        public bool dostup_pushkin { get; set; }
+        public string dostup_pushkin { get; set; }
 
     }
 }
